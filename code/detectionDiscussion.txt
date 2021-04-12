@@ -1,0 +1,12 @@
+Hidden size: 5, Model test accuracy: 0.321
+Hidden size: 10, Model test accuracy: 0.357
+Hidden size: 15, Model test accuracy: 0.357
+
+Configurations:
+batch_size 8
+epochs 4 
+
+There is a slight trend with the hidden size. When then hidden size is increase, the accuracy increases. This
+is because a larger hidden size means more learnable parameters, and thus, a potential better representation
+of the training data. However, it seems like the accuracy converges at hidden size 10, as any more increase will keep it at the same
+accuracy. 
