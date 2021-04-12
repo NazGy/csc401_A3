@@ -4,7 +4,9 @@ probably because with less iterations, the model is learning less about the data
 that decreasing the number of speakers causes the model to reach 100% accuracy quite easily. This might be because
 since there are less potential speakers to choose from, its easier for the model to identify who is speaking. The
 classification accuracy also slightly decreases with a smaller M. This can be because since there are less components,
-there are less learnable parameters so the model is not representing the training data as well. 
+there are less learnable parameters so the model is not representing the training data as well. With an M of 32, in only
+1 epoch, the model managed to reach 100% accuracy. This can be because the model distinguished the 32 speakers 
+as 32 different components, and thus was able to reach perfect accuracy.
 
 One way to improve accuracy could be to increase the number of components. This is because if the complexity of the data
 is not being represented in the current model, then increasing the complexity may cause the accuracy to increase. 
